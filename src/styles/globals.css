@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DIN-Light';
+  src: local('DIN-Light'), url(../assets/fonts/din/DIN-Light.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,11 +13,16 @@
   --blue: 0,80,255;
   --skin: 244,236,230;
   --skin-dark: 230,218,206;
+  --montserrat: 'Montserrat', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --din-light: "DIN-Light";
 
   --primary-bg: rgb(var(--blue));
   --skin-bg: rgb(var(--skin));
   --skin-dark-bg: rgb(var(--skin-dark));
   --primary-text: black;
+  --ff-heading: var(--poppins);
+  --ff-text: var(--din-light);
 }
 
 html,
@@ -20,4 +30,12 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: white;
+}
+h1,h2,h3,h4,h5{
+  font-family: var(--ff-heading);
+}
+
+p{
+  font-family: var(--ff-text);
+  
 }
