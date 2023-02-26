@@ -15,9 +15,9 @@ function Footer() {
 				<span>Ezequiel Dominguez</span>
 			</div>
 			<div className={secondCol}>
-				<div>
+				<div className='flex w-1/2 sm:w-1/3 h-16 lg:w-28 justify-around flex-col items-center'>
 					<BoldSpan>Redes sociales</BoldSpan>
-					<div>
+					<div className='flex w-full justify-between'>
 						<LinkIcon
 							href='https://github.com/cocahuana'
 							icon={Icons.GITHUB}
