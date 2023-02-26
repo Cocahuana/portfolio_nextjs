@@ -1,8 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: 'DIN-Light';
   src: local('DIN-Light'), url(../assets/fonts/din/DIN-Light.ttf) format('truetype');
 }
-
+@font-face {
+  font-family: 'DIN-Heavy';
+  src: local('DIN-Heavy'), url(../assets/fonts/din/DIN\ Next\ LT\ W04\ Heavy.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,6 +29,7 @@
   --primary-text: black;
   --ff-heading: var(--poppins);
   --ff-text: var(--din-light);
+  --ff-din-heavy: "DIN-Heavy";
 }
 
 html,

@@ -1,0 +1,5 @@
+.BoldSpan{
+    font-size: 14px;
+    color: black;
+    font-family: var(--ff-din-heavy);
+}
