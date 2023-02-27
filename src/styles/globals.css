@@ -61,3 +61,7 @@ p{
   font-family: var(--ff-text);
   font-size: 14px;
 }
+
+.leftBottomShadow{
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
+}
