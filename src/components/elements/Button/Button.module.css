@@ -18,6 +18,7 @@
 .passive:hover, .passive:active{
     background-color: var(--primary-bg);
     color: white;
+    border-color: var(--primary-bg);
 }
 
 .active{
