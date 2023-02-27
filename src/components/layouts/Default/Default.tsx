@@ -1,5 +1,5 @@
 import Header from "@/components/modules/Header/Header";
-import Footer from "@/components/modules/Header/Footer/Footer";
+import Footer from "@/components/modules/Footer/Footer";
 type Props = {
 	children: React.ReactNode;
 };
@@ -7,7 +7,7 @@ type Props = {
 const Default = ({ children }: Props) => (
 	<div>
 		<Header />
-		<div>{children}</div>
+		{children}
 		<Footer />
 	</div>
 );

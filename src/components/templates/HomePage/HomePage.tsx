@@ -1,8 +1,14 @@
-const styles = "poner css";
 import Button from "@/components/elements/Button/Button";
-const HomePage = () => (
+import styles from "./HomePage.module.css";
+function HomePage() {
 	/* styles.content */
-	<div className={styles}>{/* styles.author */}</div>
-);
+	const { skinBg, whiteBg } = styles;
+	return (
+		<div className='flex w-full'>
+			<div className={skinBg}>sadasd</div>
+			<div className={whiteBg}>fgfffff</div>
+		</div>
+	);
+}
 
 export default HomePage;
