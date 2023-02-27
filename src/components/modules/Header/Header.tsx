@@ -21,11 +21,13 @@ function Header() {
 
 	return (
 		<div className='h-32 flex'>
-			<div className='w-1/2 flex justify-start items-center p-4'>
-				<div className='flex w-3/4 justify-between items-center'>
-					<span>Cuadradito</span>
-					<h2>Ezequiel Dominguez</h2>
-					<h5>/ Full Stack Developer</h5>
+			<div className='w-1/2 flex justify-start items-center p-12'>
+				<div className='flex w-auto justify-center items-center gap-4'>
+					<span className='w-5 h-5 border bg-[color:var(--primary-bg)]'></span>
+					<h3>Ezequiel Dominguez</h3>
+					<p className='text-lg ml-1 font-medium tracking-wider'>
+						/ FULL STACK DEVELOPER
+					</p>
 				</div>
 			</div>
 			<div className='w-1/2 flex'>

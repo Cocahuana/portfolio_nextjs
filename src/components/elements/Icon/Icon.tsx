@@ -26,17 +26,19 @@ type Props = {
 	alt?: string;
 };
 
-const Icon = ({ icon, alt }: Props) => (
-	<svg
-		width={20}
-		height={20}
-		viewBox='0 0 24 24'
-		fill='currentColor'
-		focusable='false'
-	>
-		{alt && <title>{alt}</title>}
-		{icons[icon]}
-	</svg>
-);
+function Icon({ icon, alt }: Props) {
+	return (
+		<svg
+			width={20}
+			height={20}
+			viewBox='0 0 24 24'
+			fill='currentColor'
+			focusable='false'
+		>
+			{alt && <title>{alt}</title>}
+			{icons[icon]}
+		</svg>
+	);
+}
 
 export default Icon;

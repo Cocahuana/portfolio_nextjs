@@ -1,7 +1,7 @@
 .skinBg{
     width: 40%;
     height: 100vh;
-    background-color: var(--skin-bg);
+    background-color: var(--skin-dark-bg);
 }
 
 .whiteBg{
