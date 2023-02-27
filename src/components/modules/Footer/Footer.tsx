@@ -1,8 +1,7 @@
-import LinkIcon from "@/components/elements/LinkIcon/LinkIcon";
-import { Icons } from "@/components/elements/Icon/Icon";
 import styles from "./Footer.module.css";
 import Flex from "@/components/elements/Flex/Flex";
 import BoldSpan from "@/components/elements/BoldSpan/BoldSpan";
+import SocialMediaContainer from "../SocialMediaContainer/SocialMediaContainer";
 function Footer() {
 	const { footer, firstCol, secondCol, privacySection } = styles;
 	return (
@@ -17,26 +16,7 @@ function Footer() {
 			<div className={secondCol}>
 				<div className='flex w-1/2 sm:w-1/3 h-16 lg:w-28 justify-around flex-col items-center'>
 					<BoldSpan>Redes sociales</BoldSpan>
-					<div className='flex w-full justify-between'>
-						<LinkIcon
-							href='https://github.com/cocahuana'
-							icon={Icons.GITHUB}
-							alt='GitHub'
-							target='_blank'
-						/>
-						<LinkIcon
-							href='https://linkedin.com/in/ezequiel-dominguez-dev'
-							icon={Icons.LINKEDIN}
-							alt='Linkedin'
-							target='_blank'
-						/>
-						<LinkIcon
-							href='https://www.instagram.com/ezequiel.dominguez__/'
-							icon={Icons.INSTAGRAM}
-							alt='Instagram'
-							target='_blank'
-						/>
-					</div>
+					<SocialMediaContainer />
 				</div>
 			</div>
 		</footer>
