@@ -1,4 +1,5 @@
 import NavLink from "@/components/elements/NavLink/NavLink";
+import SquareBlock from "@/components/elements/SquareBlock/SquareBlock";
 function Header() {
 	const navLinks = [
 		{
@@ -6,7 +7,7 @@ function Header() {
 			label: "SOBRE MÍ",
 		},
 		{
-			href: "/Curriculum",
+			href: "/curriculum",
 			label: "CURRICULUM",
 		},
 		{
@@ -23,7 +24,7 @@ function Header() {
 		<div className='h-32 flex'>
 			<div className='w-1/2 flex justify-start items-center p-12'>
 				<div className='flex w-auto justify-center items-center gap-4'>
-					<span className='w-5 h-5 border bg-[color:var(--primary-bg)]'></span>
+					<SquareBlock />
 					<h3>Ezequiel Dominguez</h3>
 					<p className='text-lg ml-1 font-medium tracking-wider'>
 						/ FULL STACK DEVELOPER

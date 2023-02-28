@@ -1,7 +1,7 @@
 
 
 .button{
-    width: 130px;
+    min-width: 130px;
     height: 35px;
     transition: all 0.4s ease;
     cursor: pointer;
@@ -35,4 +35,5 @@
 
 .button__text{
     font-weight: bold;
+    margin: 10px;
 }

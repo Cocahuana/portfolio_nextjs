@@ -1,11 +1,11 @@
 import Default from "@/components/layouts/Default/Default";
-
-function Curriculum() {
+import Curriculum from "@/components/templates/Curriculum/Curriculum";
+function curriculum() {
 	return (
 		<Default>
-			<div>Curriculum</div>
+			<Curriculum />
 		</Default>
 	);
 }
 
-export default Curriculum;
+export default curriculum;
