@@ -19,8 +19,16 @@ function HomePage() {
 								<h2 className='text-8xl'>Hola</h2>
 								<h3>Esto es lo que soy y lo que hago</h3>
 								<div className='flex gap-2'>
-									<Button text='CURRICULUM' active={true} />
-									<Button text='PROYECTOS' active={false} />
+									<Button
+										href='/curriculum'
+										text='CURRICULUM'
+										active={true}
+									/>
+									<Button
+										href='/Proyectos'
+										text='PROYECTOS'
+										active={false}
+									/>
 								</div>
 								<p className='text-lg'>
 									Párrafo. Haz clic aquí para agregar tu

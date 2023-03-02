@@ -4,6 +4,7 @@ import Card from "@/components/elements/Card/Card";
 import SquareBlock from "@/components/elements/SquareBlock/SquareBlock";
 import CurriculumCard from "@/components/modules/CurriculumCard/CurriculumCard";
 import Flex from "@/components/elements/Flex/Flex";
+
 function Curriculum() {
 	const experiences = [
 		{
@@ -82,7 +83,12 @@ function Curriculum() {
 						<h4 className=' flex items-end '>Experiencia</h4>
 						<div />
 						<div className='flex items-end justify-end'>
-							<Button text='DESCARGAR CV' active={true} />
+							<Button
+								href={"/resume_EN.pdf"}
+								target='_blank'
+								text='DESCARGAR CV'
+								active={true}
+							/>
 						</div>
 					</div>
 					<div className='col-span-full flex flex-col gap-8 mb-10'>

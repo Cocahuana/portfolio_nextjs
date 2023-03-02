@@ -7,7 +7,6 @@ type Props = {
 function NavLink({ href, label }: Props) {
 	const router = useRouter();
 	const currentRoute = router.pathname;
-	console.log({ currentRoute, href });
 	return (
 		<div className='w-24 hover:text-[color:var(--primary-bg)]'>
 			<Link href={href}>

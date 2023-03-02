@@ -6,7 +6,6 @@ type Props = {
 };
 
 function Default({ children }: Props) {
-	const router = useRouter();
 	return (
 		<div>
 			<Header />
