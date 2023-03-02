@@ -4,10 +4,13 @@ import styles from "./Card.module.css";
 
 type Props = {
 	children: React.ReactNode;
+	className?: string;
 };
-function Card({ children }: Props) {
+function Card({ children, className }: Props) {
 	// Card Debe tener un div contenedor con las medidas exactas ya que ocupa el 100% del espacio en el que esta contenido
-	return <div className={styles.cardShadow}>{children}</div>;
+	return (
+		<div className={`${styles.cardShadow} ${className}`}>{children}</div>
+	);
 }
 
 export default Card;

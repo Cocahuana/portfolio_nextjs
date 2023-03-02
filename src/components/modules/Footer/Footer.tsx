@@ -1,5 +1,4 @@
 import styles from "./Footer.module.css";
-import Flex from "@/components/elements/Flex/Flex";
 import BoldSpan from "@/components/elements/BoldSpan/BoldSpan";
 import SocialMediaContainer from "../SocialMediaContainer/SocialMediaContainer";
 function Footer() {

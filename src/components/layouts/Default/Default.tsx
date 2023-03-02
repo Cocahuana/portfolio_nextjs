@@ -1,37 +1,19 @@
 import Header from "@/components/modules/Header/Header";
 import Footer from "@/components/modules/Footer/Footer";
-import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 type Props = {
 	children: React.ReactNode;
 };
 
-const opacityVariant = {
-	initial: {
-		opacity: 0,
-	},
-	in: {
-		opacity: 1,
-	},
-	out: {
-		opacity: 0,
-	},
-};
-
-const animationTransition = { type: "spring", stiffness: 260, damping: 150 };
-
-const Default = ({ children }: Props) => (
-	<div>
-		<Header />
-		<motion.div
-			initial='initial'
-			animate='in'
-			variants={opacityVariant}
-			transition={animationTransition}
-		>
+function Default({ children }: Props) {
+	const router = useRouter();
+	return (
+		<div>
+			<Header />
 			{children}
-		</motion.div>
-		<Footer />
-	</div>
-);
+			<Footer />
+		</div>
+	);
+}
 
 export default Default;
