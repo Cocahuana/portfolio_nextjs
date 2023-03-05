@@ -1,7 +1,14 @@
 import Picture, { Shape } from "@/components/elements/Picture/Picture";
 import IMG_Professional from "src/assets/images/professional picture.jpeg";
 import SocialMediaContainer from "../SocialMediaContainer/SocialMediaContainer";
+import Button from "@/components/elements/Button/Button";
 function ProfileCard() {
+	const CTAs = (
+		<div className='flex lg:hidden gap-2'>
+			<Button href='/curriculum' text='CURRICULUM' active={true} />
+			<Button href='/Proyectos' text='PROYECTOS' active={false} />
+		</div>
+	);
 	return (
 		<div className='w-full h-full bg-[color:var(--skin-bg)] flex flex-col items-center leftBottomShadow'>
 			<div className='w-full h-full flex flex-col items-center p-12 gap-6'>
@@ -17,11 +24,12 @@ function ProfileCard() {
 					<h3>Domínguez</h3>
 				</div>
 				<div className='w-14 h-0.5 bg-[color:var(--primary-bg)]' />
-				<p className='text-lg ml-1 font-medium tracking-widest'>
+				<p className='hidden lg:block text-lg ml-1 font-medium tracking-widest'>
 					FULL STACK DEVELOPER
 				</p>
+				{CTAs}
 			</div>
-			<div className='bg-white w-full flex justify-center items-center p-4 '>
+			<div className='bg-white w-full flex justify-center items-center p-4'>
 				<SocialMediaContainer
 					justify='justify-center'
 					items='items-center'

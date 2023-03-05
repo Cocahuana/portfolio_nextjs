@@ -12,10 +12,10 @@ function Footer() {
 				<span>© 2023 Creado por</span>
 				<span>Ezequiel Dominguez</span>
 			</div>
-			<div className={secondCol}>
-				<div className='flex w-1/2 sm:w-1/3 h-16 lg:w-28 justify-around flex-col items-center'>
+			<div className={`${secondCol}`}>
+				<div className='flex sm:w-1/3 h-16 lg:w-28 justify-around flex-col items-center '>
 					<BoldSpan>Redes sociales</BoldSpan>
-					<SocialMediaContainer />
+					<SocialMediaContainer className='justify-evenly lg:justify-between' />
 				</div>
 			</div>
 		</footer>

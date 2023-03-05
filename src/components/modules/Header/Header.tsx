@@ -33,7 +33,7 @@ function Header() {
 	return (
 		<div className='h-[10vh] flex w-full bg-white fixed top-0 overflow-hidden'>
 			<div className='flex lg:hidden w-full justify-between px-6 items-center'>
-				<div className='flex flex-col items-start bg-red-400'>
+				<div className='flex flex-col items-start'>
 					<div className='flex justify-center items-center'>
 						<SquareBlock />
 						<h3 className='ml-4'>Ezequiel Dominguez</h3>

@@ -5,9 +5,12 @@ type Props = {
 	justify?: string;
 	items?: string;
 	gap?: string;
+	className?: string;
 };
-function SocialMediaContainer({ justify, items, gap }: Props) {
-	const styles = ` ${justify ? justify : "justify-between"} ${items} ${gap}`;
+function SocialMediaContainer({ justify, items, gap, className }: Props) {
+	const styles = ` ${
+		justify ? justify : "justify-between"
+	} ${items} ${gap} ${className}`;
 	return (
 		<div className={`flex w-full  ${styles}`}>
 			<LinkIcon

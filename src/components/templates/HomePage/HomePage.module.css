@@ -1,5 +1,5 @@
 .skinBg{
-    background: linear-gradient(to top,  var(--skin-dark-bg) 0%,var(--skin-dark-bg) 50%,white 50%,white 100%);
+    background: linear-gradient(to top,  var(--skin-dark-bg) 0%,var(--skin-dark-bg) 65%,white 65%,white 100%);
 }
 
 @media (min-width: 1024px) {
