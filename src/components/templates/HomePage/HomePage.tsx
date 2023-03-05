@@ -9,7 +9,7 @@ function HomePage() {
 				<div className='bg-transparent w-full h-[80vh] flex justify-center items-center '>
 					<div className='w-1/2 h-auto'>
 						<div className='w-full h-full'>
-							<div className='flex w-full h-full'>
+							<div className='flex flex-col lg:flex-row w-full h-full'>
 								<div className='w-2/5'>
 									<ProfileCard />
 								</div>
