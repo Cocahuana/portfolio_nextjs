@@ -12,7 +12,7 @@ function HomePage() {
 	return (
 		<div className={`flex w-full h-full ${styles.skinBg}`}>
 			<div className='w-full h-full'>
-				<div className='bg-transparent px-6 mb-6 w-full minH-[80vh] lg:h-[80vh] flex justify-center items-center '>
+				<div className='bg-transparent px-6 mb-6 lg:mb-0 w-full minH-[80vh] lg:h-[80vh] flex justify-center items-center '>
 					<div className='w-full lg:w-1/2 h-auto'>
 						<div className='w-full h-full'>
 							<div className='flex flex-col lg:flex-row w-full h-full'>
