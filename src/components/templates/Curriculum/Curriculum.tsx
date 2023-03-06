@@ -70,19 +70,20 @@ function Curriculum() {
 		"Español (competente)",
 	];
 	return (
-		<BoxSkin>
-			<div className='w-full h-auto  flex flex-col justify-center items-center'>
-				<div className='w-[724px] grid grid-cols-12 gap-8'>
-					<div className='col-span-full row-span-full grid grid-cols-3 grid-rows-2'>
-						<div className='col-span-1 ' />
-						<div className='col-span-1  flex items-center gap-2  justify-center pt-14 pb-2 '>
+		<BoxSkin className='p-4 lg:p-0'>
+			<div className='w-full h-auto  flex flex-col justify-center items-center '>
+				<div className='w-full lg:w-[724px] grid lg:grid-cols-12 gap-8 '>
+					<div className='col-span-full row-span-full grid grid-cols-2 grid-rows-2 items-center lg:items-end gap-10 lg:gap-0'>
+						<div className='col-span-full flex items-center gap-2 justify-center lg:pt-14 lg:pb-2 '>
 							<SquareBlock />
-							<h3>Currículum</h3>
+							<h3 className='text-3xl'>Currículum</h3>
 						</div>
-						<div className='col-span-1 row-span-1' />
-						<h4 className=' flex items-end '>Experiencia</h4>
-						<div />
-						<div className='flex items-end justify-end'>
+
+						<h4 className='col-span-1 flex items-end'>
+							Experiencia
+						</h4>
+
+						<div className='col-span-1 flex items-end justify-end'>
 							<Button
 								href={"/resume_EN.pdf"}
 								target='_blank'
