@@ -121,7 +121,7 @@ function Curriculum() {
 							/>
 						))}
 					</div>
-					<div className='col-span-full flex flex-col gap-8 bg-white h-96'>
+					<div className='col-span-full flex flex-col gap-8 bg-white h-auto lg:h-96'>
 						<Card className='flex flex-col justify-center gap-8 p-10'>
 							<div className='flex flex-col justify-center gap-8'>
 								<h3>Habilidades profesionales</h3>
@@ -130,11 +130,13 @@ function Curriculum() {
 										(skill: string, key: number) => (
 											<li
 												key={key}
-												className='w-1/2 mb-4'
+												className='w-full lg:w-1/2 mb-4'
 											>
 												<Flex className='gap-4'>
 													<SquareBlock />
-													<p>{skill}</p>
+													<p className='text-base'>
+														{skill}
+													</p>
 												</Flex>
 											</li>
 										)
@@ -148,11 +150,13 @@ function Curriculum() {
 										(language: string, key: number) => (
 											<li
 												key={key}
-												className='w-1/2 mb-4'
+												className='w-full lg:w-1/2 mb-4'
 											>
 												<Flex className='gap-4'>
 													<SquareBlock />
-													<p>{language}</p>
+													<p className='text-base'>
+														{language}
+													</p>
 												</Flex>
 											</li>
 										)
