@@ -9,7 +9,9 @@ function NavLink({ href, label, className }: Props) {
 	const router = useRouter();
 	const currentRoute = router.pathname;
 	return (
-		<div className={` w-24 hover:text-[color:var(--primary-bg)] `}>
+		<div
+			className={` min-w-24 w-auto hover:text-[color:var(--primary-bg)] `}
+		>
 			<Link href={href}>
 				{currentRoute === href ? (
 					<p

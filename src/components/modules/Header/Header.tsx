@@ -49,10 +49,10 @@ function Header() {
 							<Hamburger />
 						</Flex>
 						<Flex className='w-full h-full items-center'>
-							<Flex className='flex-col w-full h-1/3 items-center justify-around'>
+							<Flex className='flex-col w-full h-2/5 items-center justify-around'>
 								{navLinks.map((navLink) => (
 									<NavLink
-										className='text-xl font-bold'
+										className='text-2xl font-["DIN-Heavy"]'
 										key={navLink.label}
 										href={navLink.href}
 										label={navLink.label}
