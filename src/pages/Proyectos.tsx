@@ -1,11 +1,11 @@
 import Default from "@/components/layouts/Default/Default";
-
-function Proyectos() {
+import Proyectos from "@/components/templates/Proyectos/Proyectos";
+function proyectos() {
 	return (
 		<Default>
-			<div>Proyectos</div>
+			<Proyectos />
 		</Default>
 	);
 }
 
-export default Proyectos;
+export default proyectos;
