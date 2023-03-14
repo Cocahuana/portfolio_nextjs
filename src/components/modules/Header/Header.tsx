@@ -29,11 +29,11 @@ function Header() {
 			label: "CURRICULUM",
 		},
 		{
-			href: "/Proyectos",
+			href: "/proyectos",
 			label: "PROYECTOS",
 		},
 		{
-			href: "/Contacto",
+			href: "/contacto",
 			label: "CONTACTO",
 		},
 	];
