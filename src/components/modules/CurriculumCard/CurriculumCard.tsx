@@ -1,5 +1,5 @@
 import Card from "@/components/elements/Card/Card";
-
+import BlueTitle from "@/components/elements/BlueTitle/BlueTitle";
 type Props = {
 	date: string;
 	role: string;
@@ -22,9 +22,7 @@ function CurriculumCard({
 			<Card className='w-full h-full flex flex-col lg:flex-row p-6 lg:p-0 gap-6 lg:gap-0'>
 				<div className='flex w-full lg:w-1/2 '>
 					<div className='flex flex-col w-full gap-2.5 lg:p-10 lg:pt-20'>
-						<h3 className='text-xl text-[color:var(--primary-bg)]'>
-							{date}
-						</h3>
+						<BlueTitle titleText={date} />
 						<p className='text-lg'>{role}</p>
 						<p className='text-sm'>{companyName}</p>
 						<p className='text-sm'>{companyLocation}</p>
