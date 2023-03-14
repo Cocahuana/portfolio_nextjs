@@ -1,10 +1,9 @@
 type Props = {
 	children: React.ReactNode;
-	className: React.HTMLAttributes<HTMLDivElement>;
+	className: string;
 };
-
-function Grid({ children }: Props) {
-	return <div className='grid-flow-col bg-red-300'>{children}</div>;
+function Grid({ children, className }: Props) {
+	return <div className={`grid row-span-full ${className}`}>{children}</div>;
 }
 
 export default Grid;
