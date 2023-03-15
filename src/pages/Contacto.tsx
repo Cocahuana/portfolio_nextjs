@@ -1,6 +1,6 @@
 import Default from "@/components/layouts/Default/Default";
 
-function Contacto() {
+function contacto() {
 	return (
 		<Default>
 			<div>Curriculum</div>
@@ -8,4 +8,4 @@ function Contacto() {
 	);
 }
 
-export default Contacto;
+export default contacto;

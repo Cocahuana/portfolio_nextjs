@@ -6,7 +6,7 @@ function ProfileCard() {
 	const CTAs = (
 		<div className='flex lg:hidden gap-2'>
 			<Button href='/curriculum' text='CURRICULUM' active={true} />
-			<Button href='/Proyectos' text='PROYECTOS' active={false} />
+			<Button href='/proyectos' text='PROYECTOS' active={false} />
 		</div>
 	);
 	return (

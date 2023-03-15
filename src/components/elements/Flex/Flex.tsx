@@ -1,4 +1,3 @@
-import styles from "./Flex.module.css";
 type Props = {
 	children: React.ReactNode;
 	className?: string;
@@ -6,7 +5,7 @@ type Props = {
 };
 function Flex({ children, className, onClick }: Props) {
 	return (
-		<div className={`${styles.flex} ${className}`} onClick={onClick}>
+		<div className={`flex w-full ${className}`} onClick={onClick}>
 			{children}
 		</div>
 	);

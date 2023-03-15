@@ -43,47 +43,55 @@ function Proyectos() {
 
 	return (
 		<BoxSkin className='min-h-screen px-6'>
-			<Grid className='gap-6 max-w-[400px]'>
-				<Flex className='justify-center items-center gap-2'>
-					<SquareBlock />
-					<h3>Proyectos</h3>
-				</Flex>
-				<Flex>
-					<p className='text-base text-center'>
-						Párrafo. Haz clic aquí para agregar tu propio texto y
-						editarlo. Es fácil. Haz clic en Editar texto o doble
-						clic aquí para agregar tu contenido y cambiar la fuente.
-						En este espacio puedes contar tu historia y permitir que
-						los usuarios sepan más sobre ti.
-					</p>
-				</Flex>
-				{projects.map((project, key) => (
-					<Card
-						className='bg-white min-h-[30vh] max-h-[60vh] overflow-hidden'
-						key={key}
-					>
-						<Flex className='h-full flex-col items-center justify-between'>
-							<Flex className='flex-col gap-4 min-h-[250px] max-h-[252px] py-4 '>
-								<Flex>
-									<div className='h-full w-2 bg-[color:var(--primary-bg)]' />
-									<Flex className='flex-col gap-1 px-4'>
-										<BlueTitle titleText={project.title} />
-										<p className='font-bold font-["DIN-Heavy"]'>
-											{project.role}
-										</p>
+			<Flex className='justify-center'>
+				<Grid className='gap-6 max-w-[400px] md:max-w-[724px] md:gap-20'>
+					<Flex className='justify-center items-center gap-3'>
+						<SquareBlock />
+						<h3 className='md:text-3xl'>Proyectos</h3>
+					</Flex>
+					<Flex>
+						<p className='text-base md:text-lg text-center'>
+							Párrafo. Haz clic aquí para agregar tu propio texto
+							y editarlo. Es fácil. Haz clic en Editar texto o
+							doble clic aquí para agregar tu contenido y cambiar
+							la fuente. En este espacio puedes contar tu historia
+							y permitir que los usuarios sepan más sobre ti.
+						</p>
+					</Flex>
+					{projects.map((project, key) => (
+						<Card
+							className='bg-white min-h-[30vh] max-h-[60vh] md:min-h-[50vh] overflow-hidden'
+							key={key}
+						>
+							<Flex className='h-full flex-col items-center justify-between md:flex-row'>
+								<Flex className='flex-col gap-4 min-h-[250px] max-h-[252px]  py-4 md:py-0 md:h-full md:max-h-full md:justify-center md:w-3/5'>
+									<Flex className='md:mb-6'>
+										<div className='h-full w-2 bg-[color:var(--primary-bg)]' />
+										<Flex className='flex-col gap-1 px-4 md:px-8'>
+											<BlueTitle
+												titleText={project.title}
+											/>
+											<p className='font-bold text-sm font-["DIN-Heavy"]'>
+												{project.role}
+											</p>
+										</Flex>
 									</Flex>
+									<p className='px-4 md:px-10 text-base text-justify'>
+										{project.description}
+									</p>
 								</Flex>
-								<p className='px-4'>{project.description}</p>
+								<Flex className='w-full max-h-[252px] md:h-full md:max-h-full md:w-2/5 '>
+									<Image
+										className='w-full h-full object-cover '
+										src={project.photo}
+										alt={project.title}
+									/>
+								</Flex>
 							</Flex>
-							<Image
-								className='w-full max-h-[252px] object-cover'
-								src={project.photo}
-								alt={project.title}
-							/>
-						</Flex>
-					</Card>
-				))}
-			</Grid>
+						</Card>
+					))}
+				</Grid>
+			</Flex>
 		</BoxSkin>
 	);
 }
