@@ -7,9 +7,19 @@ type Props = {
 	type: React.HTMLInputTypeAttribute;
 	name: any;
 	isRequired: boolean;
+	onChange?: any;
+	value?: any;
 };
 // InputHTMLAttributes<HTMLInputElement>.type?: HTMLInputTypeAttribute | undefined
-function FormInput({ className, label, type, name, isRequired }: Props) {
+function FormInput({
+	className,
+	label,
+	type,
+	name,
+	isRequired,
+	onChange,
+	value,
+}: Props) {
 	return (
 		<div className={className}>
 			<p className='text-black text-base font-["Poppins"]'>
@@ -24,6 +34,8 @@ function FormInput({ className, label, type, name, isRequired }: Props) {
 				className='w-full border-solid border-0 border-b-2 outline-none border-gray-500 hover:border-[color:var(--primary-bg)] text-[color:var(--primary-bg)] font-bold'
 				type={type ?? "text"}
 				name={name}
+				onChange={onChange}
+				value={value}
 			/>
 		</div>
 	);
