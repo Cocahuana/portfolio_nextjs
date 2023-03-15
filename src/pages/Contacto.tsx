@@ -1,9 +1,9 @@
 import Default from "@/components/layouts/Default/Default";
-
+import Contacto from "@/components/templates/Contacto/Contacto";
 function contacto() {
 	return (
 		<Default>
-			<div>Curriculum</div>
+			<Contacto />
 		</Default>
 	);
 }
