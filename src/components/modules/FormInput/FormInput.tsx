@@ -1,5 +1,4 @@
-import BoldSpan from "@/components/elements/BoldSpan/BoldSpan";
-
+import Flex from "@/components/elements/Flex/Flex";
 type Props = {
 	className?: string;
 	label: string;
@@ -21,11 +20,13 @@ function FormInput({
 	value,
 }: Props) {
 	return (
-		<div className={className}>
-			<p className='text-black text-base font-["Poppins"]'>
+		<Flex className={className}>
+			<p className='w-full  text-black text-base font-["Poppins"]'>
 				{label}
 				{isRequired ? (
-					<span className='text-[color:var(--primary-bg)]'>*</span>
+					<span className='text-[color:var(--primary-bg)] ml-1'>
+						*
+					</span>
 				) : (
 					<></>
 				)}
@@ -37,7 +38,7 @@ function FormInput({
 				onChange={onChange}
 				value={value}
 			/>
-		</div>
+		</Flex>
 	);
 }
 

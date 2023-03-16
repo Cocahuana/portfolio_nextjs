@@ -43,39 +43,35 @@ function Contacto() {
 			isRequired: true,
 			type: "text",
 			name: "firstName",
-			value: form.firstName,
 		},
 		{
 			label: "Apellido",
 			isRequired: true,
 			type: "text",
 			name: "lastName",
-			value: form.lastName,
 		},
 		{
 			label: "Email",
 			isRequired: true,
 			type: "email",
 			name: "email",
-			value: form.email,
 		},
 		{
 			label: "Asunto",
 			isRequired: false,
 			type: "text",
 			name: "subject",
-			value: form.subject,
 		},
 		{
 			label: "Mensaje",
 			isRequired: false,
 			type: "text",
 			name: "message",
-			value: form.message,
 		},
 	];
 	const sendEmail = (form: any) => {
 		console.log("He sido enviado!!!");
+
 		emailjs
 			.sendForm(
 				emailJsSettings.serviceId,
@@ -99,51 +95,49 @@ function Contacto() {
 			);
 	};
 	const submit = ({ form }: any) => {
-		sendEmail(form);
+		const FirstArgumentEmpty = form && form.preventDefault;
+		if (FirstArgumentEmpty) {
+			form.preventDefault();
+			form.stopImmediatePropagation();
+		}
+		setStatus(true);
+		setForm(initialState);
+		setMessage("Simulacion de mensaje enviada paaaaaaaaaaaaaaaaa");
+		// sendEmail(form);
 	};
 
-	const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		// Get the name of the field that caused this change event
-		// Get the new value of this field
-		const { name, value } = event.target;
-
-		// Update state
-		// Assign new value to the appropriate form field
-		setForm({
-			...form,
-			[name]: value,
-		});
-	};
 	return (
 		<BoxSkin className='min-h-screen px-6'>
-			<Flex className='h-full justify-evenly flex-col gap-8'>
+			<Flex className='h-full justify-evenly flex-col gap-8 md:max-w-[724px]'>
 				<Flex className='items-center gap-3 justify-center'>
 					<SquareBlock />
 					<h3 className='text-2xl'>Platiquemos</h3>
 				</Flex>
 				<Card className='bg-white min-h-[70vh]'>
-					<Flex className='flex-col items-center gap-3 justify-center h-full p-6'>
+					<Flex className='flex-col items-center gap-3 justify-center h-[70vh] p-6'>
 						<Form
 							myRef={refForm}
 							className='w-full'
-							submit={submit}
+							submit={() => submit(form)}
 							initialValues={initialState}
 						>
-							{inputs.map((formInput, key) => (
-								<FormInput
-									className='w-full'
-									key={key}
-									label={formInput.label}
-									isRequired={formInput.isRequired}
-									type={formInput.type}
-									name={formInput.name}
-									value={formInput.value}
-									onChange={handleFormChange}
-								/>
-							))}
+							<Flex className='flex-col min-h-[40vh] w-full gap-6  '>
+								{inputs.map((formInput, key) => (
+									<FormInput
+										className='w-full flex-col gap-2'
+										key={key}
+										label={formInput.label}
+										isRequired={formInput.isRequired}
+										type={formInput.type}
+										name={formInput.name}
+									/>
+								))}
+							</Flex>
 						</Form>
-						{status === true ? (
-							<p className='text-green-600'>{message}</p>
+						{status === null ? (
+							<p className='text-green-600'>
+								{"always showinnng"}
+							</p>
 						) : (
 							<p className='text-red-500'>{message}</p>
 						)}
