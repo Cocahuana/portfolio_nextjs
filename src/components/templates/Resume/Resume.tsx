@@ -8,66 +8,103 @@ import Flex from "@/components/elements/Flex/Flex";
 function Resume() {
 	const experiences = [
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Octubre 2022 - Actualidad",
+			role: "Full Stack Developer",
+			companyName: "Finesite",
+			companyLocation: "Remoto en Argentina",
+			paragraphs: [
+				"Colaborar con equipos multifuncionales para desarrollar e implementar aplicaciones web innovadoras",
+				"Implementar interfaces de usuario intuitivas y receptivas del diseño de Figma que se alineen con la marca del cliente y los objetivos de experiencia del usuario.",
+				"Traducción de wireframes de UI/UX a elementos visuales",
+				"Desarrollar e implementar código de alta calidad usando React Js, JavaScript y otras tecnologías frontend.",
+				"Manténerse actualizado con las últimas tendencias y tecnologías de diseño y desarrollo.",
+				"Ayudar a los desarrolladores de back-end con la codificación y la resolución de problemas.",
+				"Comunicarse efectivamente con gerentes de proyecto, diseñadores y otras partes interesadas.",
+			],
 		},
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Agosto 2022 - Actualidad",
+			role: "Full Stack Developer",
+			companyName: "Freelancer",
+			companyLocation: "Remoto",
+			paragraphs: [
+				"Today, in an increasingly digital world, having a strong and engaging online presence is essential to the success of any business. That is why I'm  here to offer you my high-quality web development services.",
+				"Let me help you to improve or create your online presence",
+			],
 		},
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Septiembre 2022 - Octubre 2022",
+			role: "Frontend Developer",
+			companyName: "Contractor",
+			companyLocation: "Remote in Argentina",
+			paragraphs: [
+				"Desarrollar las funciones a partir de los requisitos con React js y controlar el flujo de datos con Redux.",
+				"Implementar mejores prácticas de código limpio y escalable para el desarrollo del proyecto además de ser responsable de toda la arquitectura Front-End.",
+				"Trabaje junto con el líder técnico para definir las características y las mejores formas de implementarlos.",
+				"Sugerir cambios que podrían ayudar a la experiencia del usuario en la aplicación.",
+			],
+		},
+		{
+			date: "Junio 2022 - Septiembre 2022",
+			role: "Asistente de enseñanza Full-Stack",
+			companyName: "Henry - Part Time",
+			companyLocation: "Remote in LATAM",
+			paragraphs: [
+				"Ayudante de Bootcamp (TA) para alumnos de Desarrollo Full-Stack.",
+				"Coordinar a un grupo de estudiantes para lograr la integración al grupo de estudio.",
+				"Orientar a los estudiantes en los primeros pasos de la cursada.",
+				"Asistir la resolución de ejercicios y promover la colaboración grupal (Pair Programming).",
+				"Proponer ideas para la mejora de los procesos del Bootcamp.",
+			],
+		},
+		{
+			date: "Agosto 2020 - Marzo 2021",
+			role: "Desarrollador Freelance de lenguajes Embebidos",
+			companyName: "Empresa Lumínica Argentina S.A - Full-time",
+			companyLocation: "Hibrído",
+			paragraphs: [
+				"Realizó aplicaciones mediante el lenguaje de programación C++ ambientado en el entorno de desarrollo de Arduino.",
+				"Cumplir Deadlines utilizando metodologías ágiles",
+				" Escritura de documentación y manual de usuario",
+				"Asignación de tareas a realizar para llevar a cabo todas las partes del proyecto",
+				"Toma de requerimiento",
+			],
 		},
 	];
 	const academy = [
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Marzo 2021 - November 2024",
+			role: "Licenciatura en Informática",
+			companyName: "Universidad Atlántida Argentina",
+			companyLocation: "Mar del Plata, Buenos Aires, Argentina",
+			paragraphs: ["Cursando actualmente el segundo año de la carrera"],
 		},
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Abril 2022 - Agosto 2022",
+			role: "Full Stack Developer course",
+			companyName: "Henry",
+			companyLocation: "Remote, Worldwide",
+			paragraphs: ["800 horas de curso teorico y práctico"],
 		},
 		{
-			date: " 2035 - A la fecha",
-			role: "PUESTO",
-			companyName: "Nombre de la empresa",
-			companyLocation: "Ubicación de la empresa",
-			p1: "Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar texto o doble clic aquí para agregar tu contenido y cambiar la fuente.",
-			p2: "Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.",
+			date: "Marzo 2014 - Abril 2021",
+			role: "Tecnico en Electronica",
+			companyName: "Escuela de Educación Técnica Número 2",
+			companyLocation: "Mar del Plata, Buenos Aires, Argentina",
+			paragraphs: ["Promedio: 8.20 / 10"],
 		},
 	];
 	const professionalSkills = [
-		"Mentalidad emprendedora",
-		"Planeación orientada al mercado",
+		" Deadline Oriented",
+		"Pair Programming",
 		"Trabajo en equipo y colaborativo",
-		"Análisis de Datos",
+		"Teaching ",
+		"Client Presentation",
 	];
 	const languages = [
-		"Inglés (nativo)",
-		"Francés (competente)",
-		"Español (competente)",
+		"Inglés (nativo / C2 certificado)",
+		"Español (nativo / lengua materna)",
+		"Portugues (básico / A1)",
 	];
 	return (
 		<BoxSkin className='p-4 lg:p-0'>
@@ -100,8 +137,7 @@ function Resume() {
 								role={experience.role}
 								companyName={experience.companyName}
 								companyLocation={experience.companyLocation}
-								p1={experience.p1}
-								p2={experience.p2}
+								paragraphs={experience.paragraphs}
 							/>
 						))}
 					</div>
@@ -116,8 +152,7 @@ function Resume() {
 								role={experience.role}
 								companyName={experience.companyName}
 								companyLocation={experience.companyLocation}
-								p1={experience.p1}
-								p2={experience.p2}
+								paragraphs={experience.paragraphs}
 							/>
 						))}
 					</div>

@@ -5,8 +5,7 @@ type Props = {
 	role: string;
 	companyName: string;
 	companyLocation: string;
-	p1: string;
-	p2: string;
+	paragraphs: Array<string>;
 };
 
 function CurriculumCard({
@@ -14,8 +13,7 @@ function CurriculumCard({
 	role,
 	companyName,
 	companyLocation,
-	p1,
-	p2,
+	paragraphs,
 }: Props) {
 	return (
 		<div className='bg-white h-auto lg:h-96'>
@@ -30,8 +28,11 @@ function CurriculumCard({
 				</div>
 				<div className='flex items-center w-full lg:w-1/2 lg:pr-4 lg:pt-6 h-full gap2.5 lg:gap-0'>
 					<div className='flex flex-col w-full h-auto justify-between gap-4'>
-						<p className='text-lg'>{p1}</p>
-						<p className='text-lg'>{p2}</p>
+						{paragraphs.map((p, key) => (
+							<p className='text-lg' key={key}>
+								{p}
+							</p>
+						))}
 					</div>
 				</div>
 			</Card>
