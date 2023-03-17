@@ -9,35 +9,40 @@ import IMG_beginVegan from "@/assets/images/IMG_beginVegan.jpg";
 import IMG_ecoHotel from "@/assets/images/IMG_ecoHotel.jpg";
 import IMG_ecommerce from "@/assets/images/IMG_ecommerce.png";
 import IMG_finesite from "@/assets/images/IMG_finesite.png";
+import Button from "@/components/elements/Button/Button";
 function Proyectos() {
 	const projects = [
 		{
-			title: "Nombre del proyecto 01",
+			title: "Finesite Landing Page",
 			role: "Full Stack Developer",
 			description:
-				"Párrafo. Haz clic para agregar tu propio texto y editarlo. Es fácil. Haz clic en “Editar texto” o doble clic aquí para agregar tu propio contenido y cambiar la fuente. Puedes arrastrarlo y soltarlo en cualquier lugar de la página.",
+				"La idea de Finesite comenzó en julio de 2022 con el objetivo de crear una empresa que brinde a las empresas servicios web inteligentes y eficientes que les simplifiquen la tarea, ayudándolos a alcanzar los objetivos deseados en ventas, conversiones y clientes potenciales.",
 			photo: IMG_finesite,
+			link: "https://finesiteweb.com/",
 		},
 		{
-			title: "Nombre del proyecto 01",
+			title: "Bookovich books Ecommerce",
 			role: "Full Stack Developer",
 			description:
-				"Párrafo. Haz clic para agregar tu propio texto y editarlo. Es fácil. Haz clic en “Editar texto” o doble clic aquí para agregar tu propio contenido y cambiar la fuente. Puedes arrastrarlo y soltarlo en cualquier lugar de la página.",
+				"Trabajé junto con un equipo de ocho personas para diseñar y desarrollar una aplicación web de comercio electrónico que tenía como objetivo principal vender libros electrónicos en línea. Mi función principal incluye implementar el proyecto y mantenerlo funcionando las 24 horas del día, los 7 días de la semana, asignar tickets/funciones a mis compañeros de equipo, revisión de código, depuración, programación en pares, código de refactorización, creación de nuevas funciones.",
 			photo: IMG_ecommerce,
+			link: "https://e-commerce-book-store.vercel.app/",
 		},
 		{
-			title: "Nombre del proyecto 01",
+			title: "Eco Hotel Landing Page",
 			role: "Full Stack Developer",
 			description:
-				"Párrafo. Haz clic para agregar tu propio texto y editarlo. Es fácil. Haz clic en “Editar texto” o doble clic aquí para agregar tu propio contenido y cambiar la fuente. Puedes arrastrarlo y soltarlo en cualquier lugar de la página.",
+				"PRAGMA HOTEL es pionero en la región. Nuestra experiencia y reputación nos convirtieron en el hotel con mayor crecimiento en la zona. El proyecto de renovación de Pragma Hotel está a cargo de la arquitecta y diseñadora Claudia Faena, especialista en wellness y bienestar. Sus diseños tienen una impronta elegante y espectacular.",
 			photo: IMG_ecoHotel,
+			link: "https://eco-hotel.vercel.app/",
 		},
 		{
-			title: "Nombre del proyecto 01",
+			title: "Begin Vegan Landing Page",
 			role: "Full Stack Developer",
 			description:
-				"Párrafo. Haz clic para agregar tu propio texto y editarlo. Es fácil. Haz clic en “Editar texto” o doble clic aquí para agregar tu propio contenido y cambiar la fuente. Puedes arrastrarlo y soltarlo en cualquier lugar de la página.",
+				"Begin Vegan fue la iniciativa a un projecto universitario en Mendoza, donde mediante un QR se podría acceder a esta Landing Page y ver los menues del restaurant quienes trabajan con comida vegana",
 			photo: IMG_beginVegan,
+			link: "https://begin-vegan.vercel.app/",
 		},
 	];
 
@@ -51,11 +56,8 @@ function Proyectos() {
 					</Flex>
 					<Flex>
 						<p className='text-base md:text-lg text-center'>
-							Párrafo. Haz clic aquí para agregar tu propio texto
-							y editarlo. Es fácil. Haz clic en Editar texto o
-							doble clic aquí para agregar tu contenido y cambiar
-							la fuente. En este espacio puedes contar tu historia
-							y permitir que los usuarios sepan más sobre ti.
+							Aquí podrás ver todos los proyectos en los que he
+							estado trabajando y manteniendo.
 						</p>
 					</Flex>
 					{projects.map((project, key) => (
@@ -64,7 +66,7 @@ function Proyectos() {
 							key={key}
 						>
 							<Flex className='h-full flex-col items-center justify-between md:flex-row'>
-								<Flex className='flex-col gap-4 min-h-[250px] max-h-[252px]  py-4 md:py-0 md:h-full md:max-h-full md:justify-center md:w-3/5'>
+								<Flex className='flex-col gap-4 min-h-[250px] max-h-[252px]  py-4 md:py-0 md:h-full md:max-h-full md:justify-center md:w-3/5 items-center'>
 									<Flex className='md:mb-6'>
 										<div className='h-full w-2 bg-[color:var(--primary-bg)]' />
 										<Flex className='flex-col gap-1 px-4 md:px-8'>
@@ -76,9 +78,15 @@ function Proyectos() {
 											</p>
 										</Flex>
 									</Flex>
-									<p className='px-4 md:px-10 text-base text-justify'>
+									<p className='px-4 md:px-10 text-base text-justify mb-6'>
 										{project.description}
 									</p>
+									<Button
+										text='Ver proyecto'
+										active={true}
+										href={project.link}
+										target='__blank'
+									/>
 								</Flex>
 								<Flex className='w-full max-h-[252px] md:h-full md:max-h-full md:w-2/5 '>
 									<Image
