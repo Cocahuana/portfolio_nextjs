@@ -1,11 +1,11 @@
 import Default from "@/components/layouts/Default/Default";
-import Contacto from "@/components/templates/Contacto/Contacto";
-function contacto() {
+import Contact from "@/components/templates/Contact/Contact";
+function Contacto() {
 	return (
 		<Default>
-			<Contacto />
+			<Contact />
 		</Default>
 	);
 }
 
-export default contacto;
+export default Contacto;

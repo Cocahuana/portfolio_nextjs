@@ -5,7 +5,7 @@ function HomePage() {
 	/* styles.content */
 	const CTAs = (
 		<div className='hidden lg:flex gap-2'>
-			<Button href='/curriculum' text='CURRICULUM' active={true} />
+			<Button href='/Curriculum' text='CURRICULUM' active={true} />
 			<Button href='/Proyectos' text='PROYECTOS' active={false} />
 		</div>
 	);

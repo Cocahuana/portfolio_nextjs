@@ -5,7 +5,7 @@ import SquareBlock from "@/components/elements/SquareBlock/SquareBlock";
 import CurriculumCard from "@/components/modules/CurriculumCard/CurriculumCard";
 import Flex from "@/components/elements/Flex/Flex";
 
-function Curriculum() {
+function Resume() {
 	const experiences = [
 		{
 			date: " 2035 - A la fecha",
@@ -171,4 +171,4 @@ function Curriculum() {
 	);
 }
 
-export default Curriculum;
+export default Resume;

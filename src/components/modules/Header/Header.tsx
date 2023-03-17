@@ -25,15 +25,15 @@ function Header() {
 			label: "SOBRE MÍ",
 		},
 		{
-			href: "/curriculum",
+			href: "/Curriculum",
 			label: "CURRICULUM",
 		},
 		{
-			href: "/proyectos",
+			href: "/Proyectos",
 			label: "PROYECTOS",
 		},
 		{
-			href: "/contacto",
+			href: "/Contacto",
 			label: "CONTACTO",
 		},
 	];
