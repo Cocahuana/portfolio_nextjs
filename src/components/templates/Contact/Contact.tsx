@@ -5,7 +5,7 @@ import Card from "@/components/elements/Card/Card";
 import Button from "@/components/elements/Button/Button";
 import FormInput from "@/components/modules/FormInput/FormInput";
 import emailjs from "@emailjs/browser";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Form from "@/components/modules/Form/Form";
 import useModal from "@/hooks/useModal";
 import ContactModal from "@/components/modules/Modals/ContactModal";
@@ -95,6 +95,7 @@ function Contacto() {
 					);
 				}
 			);
+		console.log({ modalOpen, open, close });
 	};
 	const submit = (formEvent: Event, form: any) => {
 		if (formEvent) {
@@ -119,6 +120,7 @@ function Contacto() {
 							className='w-full'
 							submit={submit}
 							initialValues={initialState}
+							onOpen={open}
 						>
 							<Flex className='flex-col min-h-[40vh] w-full gap-6  '>
 								{inputs.map((formInput, key) => (
@@ -133,24 +135,9 @@ function Contacto() {
 								))}
 							</Flex>
 						</Form>
-						{/* <motion.button
-							whileHover={{ scale: 1.1 }}
-							whileTap={{ scale: 0.9 }}
-							className='save-button'
-							onClick={open}
-						>
-							Launch modal
-						</motion.button>
-						{modalOpen && (
+						{status === true && modalOpen ? (
 							<ContactModal
-								modalOpen={modalOpen}
-								text={message}
-								handleClose={close}
-							/>
-						)} */}
-						{status === true ? (
-							<ContactModal
-								modalOpen={modalOpen}
+								// modalOpen={modalOpen}
 								text={message}
 								handleClose={close}
 							/>

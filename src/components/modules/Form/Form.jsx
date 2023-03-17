@@ -11,6 +11,7 @@ function Form(props) {
 		initialValues,
 		myRef,
 		className,
+		onOpen,
 	} = props;
 
 	const [form, setForm] = useState(initialValues);
@@ -31,7 +32,7 @@ function Form(props) {
 	// const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {}
 
 	return (
-		<form ref={myRef} className={className}>
+		<form ref={myRef} className={className} onSubmit={submit}>
 			<FormContext.Provider
 				value={{
 					form,
@@ -46,7 +47,7 @@ function Form(props) {
 					type='submit'
 					text='ENVIAR'
 					active={true}
-					onClick={submit}
+					onClick={onOpen}
 				/>
 			</Flex>
 		</form>
