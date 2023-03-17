@@ -23,19 +23,36 @@ function HomePage() {
 									<h2 className='text-[40px] lg:text-8xl'>
 										Hola
 									</h2>
-									<h3>Esto es lo que soy y lo que hago</h3>
+									<h3>
+										Soy Full Stack Developer especializado
+										en desarrollo Front End
+									</h3>
 									{CTAs}
 									<p className='text-base lg:text-lg'>
-										Párrafo. Haz clic aquí para agregar tu
-										propio texto y editar. Es fácil. Haz
-										clic en Editar texto o doble clic aquí
-										para agregar tu contenido y cambiar la
-										fuente.
+										Desarrollador de software con más de un
+										año de experiencia en el diseño y
+										desarrollo de aplicaciones y páginas
+										web.
 									</p>
 									<p className='text-base lg:text-lg'>
-										Aquí puedes contar tu historia y
-										permitir que tus usuarios sepan más
-										sobre ti.
+										Automotivado con un fuerte deseo de
+										aprender nuevas tecnologías, trabajar en
+										proyectos desafiantes y ayudar a mis
+										compañeros de equipo, También soy
+										adaptable y flexible para aprender
+										nuevas herramientas y hacer realidad los
+										sueños de los clientes.
+									</p>
+									<p className='text-base lg:text-lg'>
+										Así lo demuestra mi cambio de carrera
+										que comenzó a crear software dentro del
+										hardware de productos electrónicos que
+										animan fiestas, reuniones y
+										celebraciones y continúa hasta el día de
+										hoy en la entrega de soluciones en la
+										web que van desde la interacción con el
+										usuario hasta el almacenamiento en bases
+										de datos.
 									</p>
 								</div>
 							</div>
