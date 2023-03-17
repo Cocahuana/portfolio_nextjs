@@ -74,8 +74,6 @@ function Contacto() {
 		},
 	];
 	const sendEmail = (form: any) => {
-		console.log("He sido enviado!!!");
-
 		emailjs
 			.sendForm(
 				emailJsSettings.serviceId,
@@ -98,16 +96,13 @@ function Contacto() {
 				}
 			);
 	};
-	const submit = ({ form }: any) => {
-		const FirstArgumentEmpty = form && form.preventDefault;
-		if (FirstArgumentEmpty) {
-			form.preventDefault();
-			form.stopImmediatePropagation();
+	const submit = (formEvent: Event, form: any) => {
+		if (formEvent) {
+			formEvent.preventDefault();
 		}
 		setStatus(true);
 		setForm(initialState);
-		setMessage("Simulacion de mensaje enviada paaaaaaaaaaaaaaaaa");
-		// sendEmail(form);
+		sendEmail(form);
 	};
 
 	return (
@@ -122,7 +117,7 @@ function Contacto() {
 						<Form
 							myRef={refForm}
 							className='w-full'
-							submit={() => submit(form)}
+							submit={submit}
 							initialValues={initialState}
 						>
 							<Flex className='flex-col min-h-[40vh] w-full gap-6  '>
@@ -138,7 +133,7 @@ function Contacto() {
 								))}
 							</Flex>
 						</Form>
-						<motion.button
+						{/* <motion.button
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
 							className='save-button'
@@ -152,7 +147,7 @@ function Contacto() {
 								text={message}
 								handleClose={close}
 							/>
-						)}
+						)} */}
 						{status === true ? (
 							<ContactModal
 								modalOpen={modalOpen}

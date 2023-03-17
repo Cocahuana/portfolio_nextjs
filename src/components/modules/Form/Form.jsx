@@ -46,7 +46,7 @@ function Form(props) {
 					type='submit'
 					text='ENVIAR'
 					active={true}
-					onClick={() => submit(form)}
+					onClick={submit}
 				/>
 			</Flex>
 		</form>
