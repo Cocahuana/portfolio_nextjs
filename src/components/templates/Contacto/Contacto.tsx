@@ -7,6 +7,9 @@ import FormInput from "@/components/modules/FormInput/FormInput";
 import emailjs from "@emailjs/browser";
 import { useState, useRef } from "react";
 import Form from "@/components/modules/Form/Form";
+import useModal from "@/hooks/useModal";
+import ContactModal from "@/components/modules/Modals/ContactModal";
+import { AnimatePresence, motion } from "framer-motion";
 
 const initialState = {
 	firstName: "",
@@ -35,6 +38,7 @@ function Contacto() {
 	const [message, setMessage] = useState("");
 	const [status, setStatus] = useState<any>(null);
 	const refForm = useRef<any>(null);
+	const { modalOpen, close, open } = useModal();
 
 	const [form, setForm] = useState(initialState);
 	const inputs = [
@@ -134,10 +138,27 @@ function Contacto() {
 								))}
 							</Flex>
 						</Form>
-						{status === null ? (
-							<p className='text-green-600'>
-								{"always showinnng"}
-							</p>
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+							className='save-button'
+							onClick={open}
+						>
+							Launch modal
+						</motion.button>
+						{modalOpen && (
+							<ContactModal
+								modalOpen={modalOpen}
+								text={message}
+								handleClose={close}
+							/>
+						)}
+						{status === true ? (
+							<ContactModal
+								modalOpen={modalOpen}
+								text={message}
+								handleClose={close}
+							/>
 						) : (
 							<p className='text-red-500'>{message}</p>
 						)}
