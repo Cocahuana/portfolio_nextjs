@@ -24,7 +24,7 @@ function ProfileCard() {
 					<h3>Domínguez</h3>
 				</div>
 				<div className='w-14 h-0.5 bg-[color:var(--primary-bg)]' />
-				<p className='hidden lg:block text-lg ml-1 font-medium tracking-widest'>
+				<p className='hidden lg:block text-lg ml-1 font-medium tracking-wide'>
 					FULL STACK DEVELOPER
 				</p>
 				{CTAs}

@@ -23,16 +23,13 @@ function HomePage() {
 									<h2 className='text-[40px] lg:text-8xl'>
 										Hola
 									</h2>
-									<h3>
-										Soy Full Stack Developer especializado
-										en desarrollo Front End
-									</h3>
+									<h3>Soy Full Stack Developer</h3>
 									{CTAs}
 									<p className='text-base lg:text-lg'>
-										Desarrollador de software con más de un
-										año de experiencia en el diseño y
-										desarrollo de aplicaciones y páginas
-										web.
+										También soy Desarrollador de software
+										con más de un año de experiencia en el
+										diseño y desarrollo de aplicaciones y
+										páginas web.
 									</p>
 									<p className='text-base lg:text-lg'>
 										Automotivado con un fuerte deseo de
