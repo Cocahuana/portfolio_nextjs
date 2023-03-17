@@ -19,7 +19,7 @@ function HomePage() {
 								<div className=' w-full lg:w-2/5'>
 									<ProfileCard />
 								</div>
-								<div className='w-full lg:w-1/2 flex flex-col justify-between items-start p-6 lg:px-8 lg:pt-16 gap-6 lg:gap-0 '>
+								<div className='w-full lg:w-3/4 flex flex-col justify-between items-start p-6 lg:px-8 lg:pt-16 gap-6 lg:gap-0 '>
 									<h2 className='text-[40px] lg:text-8xl'>
 										Hola
 									</h2>
@@ -42,17 +42,6 @@ function HomePage() {
 										adaptable y flexible para aprender
 										nuevas herramientas y hacer realidad los
 										sueños de los clientes.
-									</p>
-									<p className='text-base lg:text-lg'>
-										Así lo demuestra mi cambio de carrera
-										que comenzó a crear software dentro del
-										hardware de productos electrónicos que
-										animan fiestas, reuniones y
-										celebraciones y continúa hasta el día de
-										hoy en la entrega de soluciones en la
-										web que van desde la interacción con el
-										usuario hasta el almacenamiento en bases
-										de datos.
 									</p>
 								</div>
 							</div>
