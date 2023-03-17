@@ -127,7 +127,7 @@ function Header() {
 						</div>
 						<div className='w-1/2 flex'>
 							<div className='w-full flex items-center justify-end p-4'>
-								<div className='flex w-1/2 items-center justify-between p-4'>
+								<div className='flex md:w-full xl:w-3/4 2xl:w-1/2 items-center justify-between p-4'>
 									{navLinks.map((navLink) => (
 										<NavLink
 											key={navLink.label}
