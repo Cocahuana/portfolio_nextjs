@@ -6,8 +6,8 @@ function Footer() {
 	return (
 		<footer className={footer}>
 			<div className={firstCol}>
-				<span style={{ marginBottom: "8px" }}>
-					Politica de Privacidad{" "}
+				<span style={{ paddingBottom: "8px" }}>
+					Politica de Privacidad
 				</span>
 				<span>© 2023 Creado por</span>
 				<span>Ezequiel Dominguez</span>
