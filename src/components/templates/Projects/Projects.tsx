@@ -47,9 +47,9 @@ function Proyectos() {
 	];
 
 	return (
-		<BoxSkin className='min-h-screen px-6'>
-			<Flex className='justify-center'>
-				<Grid className='gap-6 max-w-[400px] md:max-w-[724px] md:gap-20'>
+		<BoxSkin className='h-[350vh] px-6'>
+			<div className='flex justify-center h-full'>
+				<Grid className='gap-6 max-w-[400px] md:max-w-[724px] md:gap-20 h-full'>
 					<Flex className='justify-center items-center gap-3'>
 						<SquareBlock />
 						<h3 className='md:text-3xl'>Proyectos</h3>
@@ -62,7 +62,7 @@ function Proyectos() {
 					</Flex>
 					{projects.map((project, key) => (
 						<Card
-							className='bg-white min-h-[30vh] max-h-[60vh] md:min-h-[50vh] overflow-hidden'
+							className='bg-white h-[100vh] md:min-h-[50vh] gap-4 '
 							key={key}
 						>
 							<Flex className='h-full flex-col items-center justify-between md:flex-row'>
@@ -78,15 +78,17 @@ function Proyectos() {
 											</p>
 										</Flex>
 									</Flex>
-									<p className='px-4 md:px-10 text-base text-justify mb-6'>
+									<p className='px-4 md:px-10 text-base text-justify mb-6 '>
 										{project.description}
 									</p>
-									<Button
-										text='Ver proyecto'
-										active={true}
-										href={project.link}
-										target='__blank'
-									/>
+									<Flex className='items-center justify-center'>
+										<Button
+											text='Ver proyecto'
+											active={true}
+											href={project.link}
+											target='__blank'
+										/>
+									</Flex>
 								</Flex>
 								<Flex className='w-full max-h-[252px] md:h-full md:max-h-full md:w-2/5 '>
 									<Image
@@ -99,7 +101,7 @@ function Proyectos() {
 						</Card>
 					))}
 				</Grid>
-			</Flex>
+			</div>
 		</BoxSkin>
 	);
 }
