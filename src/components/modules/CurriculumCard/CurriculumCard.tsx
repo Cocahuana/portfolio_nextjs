@@ -26,7 +26,7 @@ function CurriculumCard({
 						<p className='text-sm'>{companyLocation}</p>
 					</div>
 				</div>
-				<div className='flex items-center w-full lg:w-1/2 lg:pr-4 lg:pt-6 h-full gap2.5 lg:gap-0'>
+				<div className='flex items-center w-full lg:w-1/2 lg:pr-4 lg:pt-6 h-full gap2.5 lg:gap-0 lg:py-4'>
 					<div className='flex flex-col w-full h-auto justify-between gap-4'>
 						{paragraphs.map((p, key) => (
 							<p className='text-lg' key={key}>
