@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
+  // output: "export", // Exportar app cuando buildea (para hostinger)
 }
 
 module.exports = nextConfig
