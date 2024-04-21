@@ -1,9 +1,21 @@
-.skinBg{
-    background: linear-gradient(to top,  var(--skin-dark-bg) 0%,var(--skin-dark-bg) 65%,white 65%,white 100%);
+.skinBg {
+	background: linear-gradient(
+		to top,
+		var(--skin-dark-bg) 0%,
+		var(--skin-dark-bg) 65%,
+		white 65%,
+		white 100%
+	);
 }
 
 @media (min-width: 1024px) {
-    .skinBg{
-        background: linear-gradient(to right,  var(--skin-dark-bg) 0%,var(--skin-dark-bg) 40%,white 40%,white 100%);
-    }
-  }
+	.skinBg {
+		background: linear-gradient(
+			to right,
+			var(--skin-dark-bg) 0%,
+			var(--skin-dark-bg) 40%,
+			white 40%,
+			white 100%
+		);
+	}
+}

@@ -11,10 +11,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Full Stack Developer</title>
+				<title>Front-end Developer</title>
 				<meta
 					name='description'
-					content='Ezequiel Dominguez portfolio - Full Stack Developer'
+					content='Ezequiel Dominguez portfolio - Front-end Developer'
 				/>
 				<meta
 					name='viewport'

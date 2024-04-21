@@ -12,7 +12,7 @@ function HomePage() {
 	return (
 		<div className={`flex w-full h-full ${styles.skinBg}`}>
 			<div className='w-full h-full'>
-				<div className='bg-transparent px-6 mb-6 lg:mb-0 w-full minH-[80vh] lg:h-[80vh] flex justify-center items-center '>
+				<div className='bg-transparent px-6 mb-6 lg:mb-0 lg:mt-2 w-full minH-[80vh] lg:h-[80vh] flex justify-center items-center '>
 					<div className='w-full lg:w-1/2 h-auto'>
 						<div className='w-full h-full'>
 							<div className='flex flex-col lg:flex-row w-full h-full'>
@@ -23,15 +23,15 @@ function HomePage() {
 									<h2 className='text-[40px] lg:text-8xl'>
 										Hola
 									</h2>
-									<h3>Soy Full Stack Developer</h3>
+									<h3>Soy Front-end Developer</h3>
 									{CTAs}
-									<p className='text-base lg:text-lg'>
+									<p className='text-justify lg:text-lg'>
 										También soy Desarrollador de software
 										con más de un año de experiencia en el
 										diseño y desarrollo de aplicaciones y
 										páginas web.
 									</p>
-									<p className='text-base lg:text-lg'>
+									<p className='text-justify lg:text-lg'>
 										Automotivado con un fuerte deseo de
 										aprender nuevas tecnologías, trabajar en
 										proyectos desafiantes y ayudar a mis
