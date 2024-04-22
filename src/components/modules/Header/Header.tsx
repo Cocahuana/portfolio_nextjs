@@ -42,7 +42,7 @@ function Header() {
 			<SquareBlock />
 			<h3>Ezequiel Dominguez</h3>
 			<p className='lg:text-lg text-[10px] ml-1 font-medium tracking-wider'>
-				/ FULL STACK DEVELOPER
+				/ FRONT END DEVELOPER
 			</p>
 		</div>
 	);
@@ -112,7 +112,7 @@ function Header() {
 								<h3 className='ml-4'>Ezequiel Dominguez</h3>
 							</div>
 							<p className='text-[14px] font-medium tracking-wider'>
-								FULL STACK DEVELOPER
+								FRONT END DEVELOPER
 							</p>
 						</div>
 						<div className='z-50' onClick={isOpen}>
@@ -125,9 +125,9 @@ function Header() {
 						<div className='w-1/2 flex justify-start items-center p-12'>
 							{nameBlock}
 						</div>
-						<div className='w-1/2 flex'>
-							<div className='w-full flex items-center justify-end p-4'>
-								<div className='flex md:w-full xl:w-3/4 2xl:w-1/2 items-center justify-between p-4'>
+						<div className='w-1/2 lg:w-2/3 flex'>
+							<div className='w-full flex items-center justify-end p-4 '>
+								<div className='flex md:w-full lg:w-3/4 xl:w-3/4 2xl:w-1/2 items-center justify-between p-4'>
 									{navLinks.map((navLink) => (
 										<NavLink
 											key={navLink.label}
