@@ -8,6 +8,30 @@ import Flex from "@/components/elements/Flex/Flex";
 function Resume() {
 	const experiences = [
 		{
+			date: "May 2023 - Present",
+			role: "Front-end Developer",
+			companyName: "InnovativeDev Global",
+			companyLocation: "Remote in Argentina",
+			paragraphs: [
+				"I design a solution to improve loading times for key forms within our client's web application, significantly enhancing user experience. Previously, load times averaged 30 seconds; through strategic enhancements, I reduced this to an average of 3 seconds, marking a remarkable 90% improvement in performance.",
+				"Pioneered the development of a new application: Backoffice; empowering administrators with customizable dashboard functionalities, notably enhancing calendar management capabilities.",
+				"Guided the development process of a cutting-edge mobile application featuring integrated video call functionality, engineered from inception to login credentials and help in the app deployment.",
+			],
+		},
+		{
+			date: "December 2023 - April 2024",
+			role: "Semi Senior Front-end developer",
+			companyName: "DataAnnotation Tech",
+			companyLocation: "Remote, New York, USA",
+			paragraphs: [
+				"Spearheaded the development and training of AI chatbots, thorough crafting several coding challenges and corresponding solutions.",
+				"Ensured the production of top-tier code snippets while precisely evaluating AI-generated code for accuracy and efficiency.",
+				"Writing explanations of how code could solve problems and evaluating various solution approaches.",
+				"Exhibited fluency in English, matched with exceptional writing and exceptional grammar, facilitating clear communication and documentation processes.",
+				"Writing human-readable summaries of coding problems",
+			],
+		},
+		{
 			date: "Octubre 2022 - Actualidad",
 			role: "Full Stack Developer",
 			companyName: "Finesite",
@@ -73,11 +97,11 @@ function Resume() {
 	];
 	const academy = [
 		{
-			date: "Marzo 2021 - November 2024",
+			date: "Marzo 2021 - November 2025",
 			role: "Licenciatura en Informática",
 			companyName: "Universidad Atlántida Argentina",
 			companyLocation: "Mar del Plata, Buenos Aires, Argentina",
-			paragraphs: ["Cursando actualmente el segundo año de la carrera"],
+			paragraphs: ["Cursando actualmente el tercer año de la carrera"],
 		},
 		{
 			date: "Abril 2022 - Agosto 2022",
@@ -95,7 +119,7 @@ function Resume() {
 		},
 	];
 	const professionalSkills = [
-		" Deadline Oriented",
+		"Deadline Oriented",
 		"Pair Programming",
 		"Trabajo en equipo y colaborativo",
 		"Teaching ",
