@@ -9,16 +9,62 @@ import IMG_beginVegan from "@/assets/images/IMG_beginVegan.jpg";
 import IMG_ecoHotel from "@/assets/images/IMG_ecoHotel.jpg";
 import IMG_ecommerce from "@/assets/images/IMG_ecommerce.png";
 import IMG_finesite from "@/assets/images/IMG_finesite.png";
+import IMG_artsand from "@/assets/images/IMG_artsand.png";
+import IMG_urbanist from "@/assets/images/IMG_urbanist.png";
+import IMG_IKE_webapp from "@/assets/images/IMG_IKE_webapp.png";
+import IMG_IKE_backoffice from "@/assets/images/IMG_IKE_backoffice.png";
+import IMG_IKE_prestadores from "@/assets/images/IMG_IKE_prestadores.png";
+import IMG_IKE_geohogar from "@/assets/images/IMG_IKE_geohogar.png";
 import Button from "@/components/elements/Button/Button";
 function Proyectos() {
 	const projects = [
 		{
-			title: "Finesite Landing Page",
+			title: "Iké Webapp",
+			role: "Front-end Developer",
+			description:
+				"En este proyecto, hemos desarrollado un sistema en el que los usuarios pueden crease una cuenta para poder solicitar asistencias y/o alquilar seguros. La webapp funciona en conjunto con sistemas de expedientes SISE (Argentina) y Sistemas de autenticación Auth0. La web cuenta con videollamadas internas (sin google meet o similares). La webapp esta conectada con otras 4 aplicaciones: Iké Backoffice, Geohogar mobile y Servicios de mascotas Mobile.",
+			photo: IMG_IKE_webapp,
+			link: "",
+		},
+		{
+			title: "Iké Backoffice",
+			role: "Front-end Developer",
+			description:
+				"En este proyecto, hemos desarrollado un sistema en el que el admin de la Iké web app puede gestionar a proveedores y asignarles clientes que requieran sus servicios. La webapp tiene calendarios integrados y sistemas para visualizar de forma temporaria los turnos agendados y ademas tienen colores para distinguirlos de los distintos proveedores. La webapp esta conectada con otras 3 aplicaciones: Iké Backoffice, y Servicios de mascotas Mobile.",
+			photo: IMG_IKE_backoffice,
+			link: "",
+		},
+		{
+			title: "Iké App mobile Prestadores",
+			role: "Front-end Developer",
+			description:
+				"Iké Argentina brinda soluciones de asistencia las 24 hs, los 365 días del año ofreciendo a nuestros usuarios asistencia frente a imprevistos en su hogar, vehículo, bicicleta o acompañando a su mascota para que nada interfiera en sus planes. En esta aplicación para celulares (Android e iOS), los turnos que saquen los clientes mediante la web app (servicio de mascotas) la veremos reflajada (nosotros, como veterinarios) en esta app, donde nos llegaran las consultas y podremos agendar videollamadas, recibir notificaciones, revisar nuestro calendario e incluso podemos agregar imagenes y ver los detalles de la consulta.",
+			photo: IMG_IKE_prestadores,
+			link: "",
+		},
+		{
+			title: "Iké Geohogar",
+			role: "Frontend Developer",
+			description:
+				"La app busca conectar a los proveedores de un servicio en especifico (técnicos, ingenieros, plomeros, etc) con clientes que requieran sus servicios. En esta app, los tecnicos podran agendar visitas a domicilio y el presupuesto que el cliente abonará será creado por los coordinadores.",
+			photo: IMG_IKE_geohogar,
+			link: "",
+		},
+		{
+			title: "Urbanist",
 			role: "Full Stack Developer",
 			description:
-				"La idea de Finesite comenzó en julio de 2022 con el objetivo de crear una empresa que brinde a las empresas servicios web inteligentes y eficientes que les simplifiquen la tarea, ayudándolos a alcanzar los objetivos deseados en ventas, conversiones y clientes potenciales.",
-			photo: IMG_finesite,
-			link: "https://finesiteweb.com/",
+				"Urbanist es una empresa que se encarga de vender indumentaria creada por ellos mismos. Cuenta con envios de los productos en toda Argentina. Tiene integrada un carrito y un chat para whatsapp",
+			photo: IMG_urbanist,
+			link: "https://urbanist.com.ar/",
+		},
+		{
+			title: "Artsand.com.ar",
+			role: "Full Stack Developer",
+			description:
+				"Artsand es un estudio de arquitectura que se encarga de realizar: planos, renders, obras, entre otros. Es una landing page visual en la que puedes contactarlos mediante un formulario",
+			photo: IMG_artsand,
+			link: "https://artsand.com.ar/",
 		},
 		{
 			title: "Bookovich books Ecommerce",
@@ -27,6 +73,14 @@ function Proyectos() {
 				"Trabajé junto con un equipo de ocho personas para diseñar y desarrollar una aplicación web de comercio electrónico que tenía como objetivo principal vender libros electrónicos en línea. Mi función principal incluye implementar el proyecto y mantenerlo funcionando las 24 horas del día, los 7 días de la semana, asignar tickets/funciones a mis compañeros de equipo, revisión de código, depuración, programación en pares, código de refactorización, creación de nuevas funciones.",
 			photo: IMG_ecommerce,
 			link: "https://e-commerce-book-store.vercel.app/",
+		},
+		{
+			title: "Finesite Landing Page",
+			role: "Full Stack Developer",
+			description:
+				"La idea de Finesite comenzó en julio de 2022 con el objetivo de crear una empresa que brinde a las empresas servicios web inteligentes y eficientes que les simplifiquen la tarea, ayudándolos a alcanzar los objetivos deseados en ventas, conversiones y clientes potenciales.",
+			photo: IMG_finesite,
+			link: "https://finesiteweb.com/",
 		},
 		{
 			title: "Eco Hotel Landing Page",
@@ -57,7 +111,7 @@ function Proyectos() {
 					<Flex>
 						<p className='text-base md:text-lg text-center'>
 							Aquí podrás ver todos los proyectos en los que he
-							estado trabajando y manteniendo.
+							estado trabajando, ya sean propios o para terceros.
 						</p>
 					</Flex>
 					{projects.map((project, key) => (
