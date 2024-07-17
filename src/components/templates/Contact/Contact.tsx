@@ -12,17 +12,17 @@ import ContactModal from "@/components/modules/Modals/ContactModal";
 import { AnimatePresence, motion } from "framer-motion";
 
 const initialState = {
-	firstName: "",
-	lastName: "",
-	email: "",
-	subject: "",
-	message: "",
+  firstName: "",
+  lastName: "",
+  email: "",
+  subject: "",
+  message: "",
 };
 
 const emailJsSettings = {
-	serviceId: "service_s6fk0l3",
-	templateId: "EzequielPortfolio",
-	publicKey: "v9enjVVlkY_oP9iFX",
+  serviceId: "service_s6fk0l3",
+  templateId: "EzequielPortfolio",
+  publicKey: "v9enjVVlkY_oP9iFX",
 };
 
 /*
@@ -35,123 +35,120 @@ const emailJsSettings = {
  */
 
 function Contacto() {
-	const [message, setMessage] = useState("");
-	const [status, setStatus] = useState<any>(null);
-	const refForm = useRef<any>(null);
-	const { modalOpen, close, open } = useModal();
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<any>(null);
+  const refForm = useRef<any>(null);
+  const { modalOpen, close, open } = useModal();
 
-	const [form, setForm] = useState(initialState);
-	const inputs = [
-		{
-			label: "Nombre",
-			isRequired: true,
-			type: "text",
-			name: "firstName",
-		},
-		{
-			label: "Apellido",
-			isRequired: true,
-			type: "text",
-			name: "lastName",
-		},
-		{
-			label: "Email",
-			isRequired: true,
-			type: "email",
-			name: "email",
-		},
-		{
-			label: "Asunto",
-			isRequired: false,
-			type: "text",
-			name: "subject",
-		},
-		{
-			label: "Mensaje",
-			isRequired: false,
-			type: "text",
-			name: "message",
-		},
-	];
-	const sendEmail = (form: any) => {
-		emailjs
-			.sendForm(
-				emailJsSettings.serviceId,
-				emailJsSettings.templateId,
-				refForm.current,
-				emailJsSettings.publicKey
-			)
-			.then(
-				(result) => {
-					console.log("Result: ", result);
-					setStatus(true);
-					setForm(initialState);
-				},
-				(error) => {
-					console.log("Error: ", error);
-					setStatus(false);
-					setMessage(
-						"Hubo un problema al enviar la solicitud, por favor vuelvalo a intentar"
-					);
-				}
-			);
-		console.log({ modalOpen, open, close });
-	};
-	const submit = (formEvent: Event, form: any) => {
-		if (formEvent) {
-			formEvent.preventDefault();
-		}
-		setStatus(true);
-		setForm(initialState);
-		sendEmail(form);
-	};
+  const [form, setForm] = useState(initialState);
+  const inputs = [
+    {
+      label: "Name",
+      isRequired: true,
+      type: "text",
+      name: "firstName",
+    },
+    {
+      label: "Last Name",
+      isRequired: true,
+      type: "text",
+      name: "lastName",
+    },
+    {
+      label: "Email",
+      isRequired: true,
+      type: "email",
+      name: "email",
+    },
+    {
+      label: "Subject",
+      isRequired: false,
+      type: "text",
+      name: "subject",
+    },
+    {
+      label: "Message",
+      isRequired: false,
+      type: "text",
+      name: "message",
+    },
+  ];
+  const sendEmail = (form: any) => {
+    emailjs
+      .sendForm(
+        emailJsSettings.serviceId,
+        emailJsSettings.templateId,
+        refForm.current,
+        emailJsSettings.publicKey
+      )
+      .then(
+        (result) => {
+          setStatus(true);
+          setForm(initialState);
+        },
+        (error) => {
+          setStatus(false);
+          setMessage(
+            "There was a problem submitting the request, please try again"
+          );
+        }
+      );
+  };
+  const submit = (formEvent: Event, form: any) => {
+    if (formEvent) {
+      formEvent.preventDefault();
+    }
+    setStatus(true);
+    setForm(initialState);
+    sendEmail(form);
+  };
 
-	return (
-		<BoxSkin className='min-h-screen px-6  flex md:justify-center md:items-center'>
-			<Flex className='h-full justify-evenly md:justify-center md:items-center  flex-col gap-8 md:max-w-[724px]'>
-				<Flex className='items-center gap-3 justify-center'>
-					<SquareBlock />
-					<h3 className='text-2xl'>Platiquemos</h3>
-				</Flex>
-				<Card className='bg-white min-h-[70vh]'>
-					<Flex className='flex-col items-center gap-3 justify-center h-[70vh] p-6'>
-						<Form
-							myRef={refForm}
-							className='w-full'
-							submit={submit}
-							initialValues={initialState}
-							onOpen={open}
-						>
-							<Flex className='flex-col min-h-[40vh] w-full gap-6  '>
-								{inputs.map((formInput, key) => (
-									<FormInput
-										className='w-full flex-col gap-2'
-										key={key}
-										label={formInput.label}
-										isRequired={formInput.isRequired}
-										type={formInput.type}
-										name={formInput.name}
-									/>
-								))}
-							</Flex>
-						</Form>
-						{status === true && modalOpen ? (
-							<ContactModal
-								// modalOpen={modalOpen}
-								text={message}
-								handleClose={close}
-							/>
-						) : (
-							<p className='text-red-500'>{message}</p>
-						)}
-					</Flex>
-				</Card>
-			</Flex>
-		</BoxSkin>
-	);
+  return (
+    <BoxSkin className="min-h-screen px-6  flex md:justify-center md:items-center">
+      <Flex className="h-full justify-evenly md:justify-center md:items-center  flex-col gap-8 md:max-w-[724px]">
+        <Flex className="items-center gap-3 justify-center">
+          <SquareBlock />
+          <h3 className="text-2xl">Platiquemos</h3>
+        </Flex>
+        <Card className="bg-white min-h-[70vh]">
+          <Flex className="flex-col items-center gap-3 justify-center h-[70vh] p-6">
+            <Form
+              myRef={refForm}
+              className="w-full"
+              submit={submit}
+              initialValues={initialState}
+              onOpen={open}
+            >
+              <Flex className="flex-col min-h-[40vh] w-full gap-6  ">
+                {inputs.map((formInput, key) => (
+                  <FormInput
+                    className="w-full flex-col gap-2"
+                    key={key}
+                    label={formInput.label}
+                    isRequired={formInput.isRequired}
+                    type={formInput.type}
+                    name={formInput.name}
+                  />
+                ))}
+              </Flex>
+            </Form>
+            {status === true && modalOpen ? (
+              <ContactModal
+                // modalOpen={modalOpen}
+                text={message}
+                handleClose={close}
+              />
+            ) : (
+              <p className="text-red-500">{message}</p>
+            )}
+          </Flex>
+        </Card>
+      </Flex>
+    </BoxSkin>
+  );
 }
 {
-	/* <form
+  /* <form
 							ref={refForm}
 							className='w-full'
 							onSubmit={sendEmail}

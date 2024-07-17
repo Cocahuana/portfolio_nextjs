@@ -26,7 +26,7 @@ function SocialMediaContainer({ justify, items, gap, className }: Props) {
 				target='_blank'
 			/>
 			<LinkIcon
-				href='https://www.instagram.com/ezequiel.dominguez__/'
+				href='https://www.instagram.com/soy_ezui/'
 				icon={Icons.INSTAGRAM}
 				alt='Instagram'
 				target='_blank'

@@ -22,19 +22,19 @@ function Header() {
 	const navLinks = [
 		{
 			href: "/",
-			label: "SOBRE MÍ",
+			label: "ABOUT ME",
 		},
 		{
 			href: "/Curriculum",
-			label: "CURRICULUM",
+			label: "CV",
 		},
 		{
 			href: "/Proyectos",
-			label: "PROYECTOS",
+			label: "PROJECTS",
 		},
 		{
 			href: "/Contacto",
-			label: "CONTACTO",
+			label: "CONTACT ME",
 		},
 	];
 	const nameBlock = (

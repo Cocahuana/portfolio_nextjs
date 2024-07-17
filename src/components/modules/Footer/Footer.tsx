@@ -7,14 +7,14 @@ function Footer() {
 		<footer className={footer}>
 			<div className={firstCol}>
 				<span style={{ paddingBottom: "8px" }}>
-					Politica de Privacidad
+					All rights reserved
 				</span>
-				<span>© 2023 Creado por</span>
+				<span>© 2023 Created By</span>
 				<span>Ezequiel Dominguez</span>
 			</div>
 			<div className={`${secondCol}`}>
 				<div className='flex sm:w-1/3 h-16 lg:w-28 justify-around flex-col items-center '>
-					<BoldSpan>Redes sociales</BoldSpan>
+					<BoldSpan>Social</BoldSpan>
 					<SocialMediaContainer className='justify-evenly lg:justify-between' />
 				</div>
 			</div>
